@@ -76,7 +76,7 @@ This absence of quantum contact has the advantage over standard transport measur
 
 \chapter{Introduction}\label{Intro}
 
-
+In this report, we are going to show ...
 
 
 
@@ -163,23 +163,22 @@ This temperature change can be measured by a nano-caloriometer we constructed us
 This resonance measuring method has been tested in our group with liquid helium for detecting geometric resonance which the coupling between cyclotron resonance and plasma resonance. 
 On a bare 2DEG chip, cyclotron resonance dips can be resolved clearly.
 
-The coupled frequency can be calculated by the following equation. 
 
-%\begin{figure}
-%  \centering
-%  \includegraphics[totalheight=8cm]{figures/.JPG}
-%  \caption{Non-radiative relaxation}
-%  \label{nonradiative}
-%\end{figure}
+\begin{figure}
+  \centering
+  \includegraphics[scale=0.25]{figures/bare_cr.JPG}
+  \caption{Bare chip CR}
+  \label{bare_cr}
+\end{figure}
 
 However, on a dot (on the order of \si{\micro\meter}) patterned sample, one can see there are two obvious resonance dips on each side which relate to the plus and minus resonance frequencies shown below.  
 
-%\begin{figure}
-%  \centering
-%  \includegraphics[totalheight=8cm]{figures/.JPG}
-%  \caption{Non-radiative relaxation}
-%  \label{nonradiative}
-%\end{figure}
+\begin{figure}
+  \centering
+  \includegraphics[scale=0.25]{figures/coupled_cr.JPG}
+  \caption{Coupled GR}
+  \label{coupled_cr}
+\end{figure}
 
 \begin{align}
 \omega_{\pm}=\frac{\omega_{c}}{2} \pm \sqrt{ \omega_{0}^{2}+ \left(\frac{ \omega_{c} }{2}\right)^{2}}
@@ -262,7 +261,7 @@ The differential signal was fed into the first lock-in amplifier the output of w
 The amplitude of the input microwave is modulated internally by the microwave generator according to the frequency of the second lock-in amp which should be much smaller than the rapid oscillating factor of the first lock-in amp. 
 Therefore, after integrating twice, the final output should be a clean response of 2DEG CR signal.     
  
-\figureref{r(b)} is the response of the thermometer resistance without microwave illumination when magnetic field is swept. 
+\figureref{r(b)} is the response of the thermometer resistance without microwave illumination when magnetic field is swept. There is some irregular response but the result is repeatable.
 This background indicates that the direction of the magnetic field has asymmetric influence on the two branches. 
 \begin{figure}
   \centering
@@ -373,8 +372,15 @@ Therefore, for electrons in \ce{AlGaAs/GaAs}, the resonant frequency is related 
 R_{e}= \frac{\omega_{x}}{\omega_{M}} \frac{l_{B}}{\pi} = \frac{eB}{m^{\ast}m_{0}} \frac{257 \si{\angstrom}}{\sqrt{B}} \frac{1}{2 \pi^{2} f_{M}} =3.4 \si{\micro \meter} \frac{\sqrt{B}}{\si{\giga \hertz}}
 \end{align}
 
+By sweeping magnetic field or microwave frequency, we should be able to see a resonant peak with a line width related to the distribution of the disc radius. 
+
 
 \section{Setup construction and calibration}\label{Construction}
+
+We used a co-plane meanderline waveguide to hold the patterned sample then placed the waveguide on the top of a broad band sample holder. Electrical connection is done by silver paste.  
+The sample holder is connected to the coaxial cable in the transmission probe by a mini-SMP connector.
+Again, this whole setup is immersed in \ce{^{3}He} liquid by our top-load \ce{^{3}He} cryostat.
+
 
 \begin{figure}
   \centering
@@ -383,34 +389,54 @@ R_{e}= \frac{\omega_{x}}{\omega_{M}} \frac{l_{B}}{\pi} = \frac{eB}{m^{\ast}m_{0}
   \label{configuration}
 \end{figure}
  
- 
- 
- 
- 
- 
- 
+We used AM modulation at \SI{17}{\hertz} for measuring except this time, the output signal is the returning microwave intensity. It can be measured by our Schottky diode detector which works in a range of $\SI{10}{\mega \hertz}$ - $\SI{40}{\giga \hertz}$ and has a maximum input of 20dbm. 
+The signal from the detector is a negative voltage which we then feed into our lock-in amp.
 
-\section{Cyclotron resonance pretest}\label{Cyclotron}
+We calibrated the system by monitoring the reading of the lock-in amp while sweeping input microwave frequency and power intensity.
+\figureref{spec} shows the relation between $V_{out}$ and $f_{in}$ with a constant power of $\SI{1}{\milli \watt}$. We can see that for small frequencies (below $\SI{12}{\giga \hertz}$), it is a linear dependence approximately and there are fluctuations after that.
 
 \begin{figure}
   \centering
-  \includegraphics[totalheight=8cm]{figures/spec.JPG}
+  \includegraphics[scale=0.5]{figures/spec.JPG}
   \caption{setup calibration 1}
   \label{spec}
 \end{figure}
- 
+
+\figureref{multifre} shows how the voltage acts when input power is increased at a sampling rate of $\SI{1}{\giga \hertz}$. It's reasonable that larger microwave intensity will result in higher voltage reading. And the lower the frequency is, the shaper the slope gets. 
 
 \begin{figure}
   \centering
-  \includegraphics[totalheight=8cm]{figures/multifre.JPG}
+  \includegraphics[scale=0.5]{figures/multifre.JPG}
   \caption{setup calibration 2}
   \label{multifre}
 \end{figure}
+
+
+This means our setup works better at lower frequencies. 
+Actually, if we do a polynomial fitting (\figureref{cali_fitting}) at $\SI{2}{\giga \hertz}$, the result is very satisfying. 
+Therefore, it is quite convincing that the negative voltage measured by the detector has a polynomial dependence with the input power intensity.
  
+ 
+\begin{figure}
+  \centering
+  \includegraphics[scale=0.5]{figures/cali_fitting.JPG}
+  \caption{Polynomial fitting}
+  \label{cali_fitting}
+\end{figure} 
+ 
+ 
+ 
+ 
+ 
+ 
+\section{Cyclotron resonance pretest}\label{Cyclotron}
+
+CR is a good test for this setup at larger frequencies so that electrons can go at least one circle before any collision and the peaks are separated far enough to resolve. 
+\figureref{crpowerdep} shows symmetric CR peaks appear when magnetic field is swept and the signal is higher with larger input power.  
 
 \begin{figure}
   \centering
-  \includegraphics[totalheight=8cm]{figures/CRpowerdep.JPG}
+  \includegraphics[scale=0.5]{figures/CRpowerdep.JPG}
   \caption{cyclotron pretest}
   \label{crpowerdep}
 \end{figure}
@@ -424,6 +450,9 @@ R_{e}= \frac{\omega_{x}}{\omega_{M}} \frac{l_{B}}{\pi} = \frac{eB}{m^{\ast}m_{0}
 
 \section{Improvement underway}\label{Improvement}
 
+Though CR can be resolved clearly, we are unable to see authentic repeatable edge state absorption peaksand there are sudden bursts of noise due to reflection and thermal fluctuation.
+Possible reasons are noise level being too high, N-grease being too thick for electric field to probe edge state or even current equipment precision being not high enough to resolve the edge state absorption. 
+We've come up with new ideas to improve the situation and new design is ready to be manufactured. 
 
 
 
@@ -431,7 +460,7 @@ R_{e}= \frac{\omega_{x}}{\omega_{M}} \frac{l_{B}}{\pi} = \frac{eB}{m^{\ast}m_{0}
 
 \chapter{Summary}\label{summary}
 
-
+In this report, we showed the work that was done since the summer in 2013. The main theme is using microwave to detect various resonance phenomenon including CR, ESR, GR, and edge state. We different developed tools for different purposes such as transport, thermal and absorption measurement setups. We successfully resolved CR on 2DEG, GR on 2DEG, ESR on DDPH and are working on detecting edge state resonance. 
 
 
 
