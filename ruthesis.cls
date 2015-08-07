@@ -228,13 +228,13 @@
       {\Large \bf \@title \par} \vskip 0pt plus 1.3fil
       {\large by \par} \vskip 0pt plus 1fil
       {\large \bf \@author \par} \vskip 0pt plus 3fil
-      {\large \sc A Thesis Submitted \\
+      {\large \sc A Research Progress Report Submitted \\
         in Partial Fulfillment of the \\
         Requirements for the Degree \par} \vskip 0pt plus 1.1fil
       {\large \bf \@degree \par} \vskip 0pt plus 4.5fil
       \begingroup
       \leftskip .5\textwidth \rightskip 0pt plus 1fil
-      {\sc Approved, Thesis Committee: \par} \vskip 2.5em
+      {\sc Approved, Committee: \par} \vskip 2.5em
       \moveright\leftskip\vbox{\hrule width \leftskip}
       \def\and{\par \vskip 2.25em minus 1em\moveright\leftskip%
         \vbox{\hrule width \leftskip}}
@@ -274,7 +274,7 @@
  \@afterindentfalse \begingroup
  \def \baselinestretch{1.7} \parskip \z@ \parindent \z@ \par
  \null \centering {{\center{ABSTRACT}}} \vskip .4in
-\@title \vskip .4in  by \vskip .4in \@author \vskip .4in \par
+%\@title \vskip .4in  by \vskip .4in \@author \vskip .4in \par
 \endgroup \setcounter
  {footnote}{0}\def\thefootnote{\fnsymbol{footnote}}\addcontentsline
  {toc}{frontmatter}{\protect\numberline {\hfil}Abstract}}

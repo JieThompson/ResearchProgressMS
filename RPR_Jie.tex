@@ -74,13 +74,6 @@ This absence of quantum contact has the advantage over standard transport measur
 \linespacing{1.7}
 
 
-\chapter{Introduction}\label{Intro}
-
-In this report, we are going to show ...
-
-
-
-
 
 \chapter{Transport behavior of electrons under the illumination of microwave}\label{Transport}
 
@@ -96,13 +89,16 @@ The total number of states in each Landau Level per unit area is marked by $n_{B
 Therefore, when the Fermi energy lies between two separate Landau Levels, longitudinal conductance reaches a local minimum and it gets to a local maximum when $E_{F}$ lies on the peak.
 As a function of magnetic field, the longitudinal resistance $R_{xx}$ represents oscillating behaviors which is known as Shubnikov de Haas oscillations (see \figureref{sdho}).
 
-\begin{figure}[h]
-  \centering
-  \includegraphics[scale=0.25]{figures/sdho.JPG}
-  \caption{Shubnikov de Haas oscillations}
-  \label{sdho}
+\begin{figure}[!htb]\centering
+   \begin{minipage}{0.49\textwidth}
+     \includegraphics[width=\linewidth]{figures/sdho.JPG}
+     \caption{Shubnikov de Haas oscillations}\label{sdho}
+   \end{minipage}
+   \begin {minipage}{0.49\textwidth}
+     \includegraphics[width=\linewidth]{figures/miro.JPG}
+     \caption{Microwave Induced Resistance Oscillations}\label{miro}
+   \end{minipage}
 \end{figure}
-
 
 
 
@@ -114,22 +110,13 @@ When microwave is applied, the figure changes quite dramatically.
 Additional maximums appear with different intensity at different harmonic peaks which is known as Microwave induced resistance oscillations (MIRO).
 MIRO is fascinating nonequilibrium transport phenomenon universal in both n-type and p-type ultrahigh mobility 2D systems. 
 
-\begin{figure}
-  \centering
-  \includegraphics[totalheight=8cm]{figures/miro.JPG}
-  \caption{Microwave Induced Resistance Oscillations}
-  \label{miro}
-\end{figure}
+
  
 Theoretical explanation of MIRO are stated as displacement mechanism and inelastic mechanism [Phys Rev. B 89, 125401 (2014)], both modify the scattering of electrons due to microwave assistance and predict the photoresistance oscillates as 
 \begin{align}
 \delta R_{\omega}/R_{0} =-2\pi\eta P\lambda^{2}\epsilon \sin(2\pi\epsilon)
 \end{align} 
 where $\eta$ is the dimensionless scattering rate, $P$ is the dimensionless microwave power, $\lambda$ is the Dingle factor which is related to the quantum lifetime as well as cyclotron frequency and $\epsilon :=\omega/\omega_{c}$. 
-
-Zero resistance state is revealed at the local minimum of MIRO and can be explained as the interaction between microwave and electrons.
-
-
 
 
 
@@ -146,39 +133,37 @@ Sweeping either microwave frequency or magnetic field will result in the case wh
 However, in \ce{AlGaAs/GaAs} material, electrons relaxation process can be non-radiative by passing the extra energy to phonons and raising lattice temperature.
 This temperature change can be measured by a nano-caloriometer we constructed using special Cernox thermometer which has a huge resistance difference for a tiny temperature change at low temperature.  
 
-\begin{figure}
-  \centering
-  \includegraphics[scale=0.5]{figures/llformation.JPG}
-  \caption{Formation of Landau Levels}
-  \label{llformation}
+
+\begin{figure}[!htb]\centering
+   \begin{minipage}{0.49\textwidth}
+     \includegraphics[width=\linewidth]{figures/llformation.JPG}
+     \caption{Formation of Landau Levels}\label{llformation}
+   \end{minipage}
+   \begin {minipage}{0.49\textwidth}
+     \includegraphics[width=\linewidth]{figures/nonradiative.JPG}
+     \caption{Non-radiative relaxation}\label{nonradiative}
+   \end{minipage}
 \end{figure}
- 
-\begin{figure}
-  \centering
-  \includegraphics[scale=0.25]{figures/nonradiative.JPG}
-  \caption{Non-radiative relaxation}
-  \label{nonradiative}
-\end{figure}
+
+
 
 This resonance measuring method has been tested in our group with liquid helium for detecting geometric resonance which the coupling between cyclotron resonance and plasma resonance. 
 On a bare 2DEG chip, cyclotron resonance dips can be resolved clearly.
 
 
-\begin{figure}
-  \centering
-  \includegraphics[scale=0.25]{figures/bare_cr.JPG}
-  \caption{Bare chip CR}
-  \label{bare_cr}
-\end{figure}
-
 However, on a dot (on the order of \si{\micro\meter}) patterned sample, one can see there are two obvious resonance dips on each side which relate to the plus and minus resonance frequencies shown below.  
 
-\begin{figure}
-  \centering
-  \includegraphics[scale=0.25]{figures/coupled_cr.JPG}
-  \caption{Coupled GR}
-  \label{coupled_cr}
+\begin{figure}[!htb]\centering
+   \begin{minipage}{0.49\textwidth}
+     \includegraphics[width=\linewidth]{figures/bare_cr.JPG}
+     \caption{Bare chip CR}\label{bare_cr}
+   \end{minipage}
+   \begin {minipage}{0.49\textwidth}
+     \includegraphics[width=\linewidth]{figures/coupled_cr.JPG}
+     \caption{Coupled GR}\label{coupled_cr}
+   \end{minipage}
 \end{figure}
+
 
 \begin{align}
 \omega_{\pm}=\frac{\omega_{c}}{2} \pm \sqrt{ \omega_{0}^{2}+ \left(\frac{ \omega_{c} }{2}\right)^{2}}
@@ -193,19 +178,17 @@ Boundary plasmon has been eliminated by choosing irregularly shaped samples and 
 
 In order to improve the sensitivity, we constructed another setup which works in \SI{300}{\milli\kelvin} due to the fact that the lower the temperature gets, the shaper resistance line the Cernox thermometer's resistance will act (\figureref{r(t)}).
 
-\begin{figure}
-  \centering
-  \includegraphics[scale=0.5]{figures/thermometercx.JPG}
-  \caption{Cernox thermometer}
-  \label{thermometer}
+\begin{figure}[!htb]\centering
+   \begin{minipage}{0.49\textwidth}
+     \includegraphics[width=\linewidth]{figures/thermometercx.JPG}
+     \caption{Cernox Thermometer}\label{thermometer}
+   \end{minipage}
+   \begin {minipage}{0.49\textwidth}
+     \includegraphics[width=\linewidth]{figures/R(T).JPG}
+     \caption{Temperature dependence of the thermometer}\label{r(t)}
+   \end{minipage}
 \end{figure}
  
-\begin{figure}
-  \centering
-  \includegraphics[scale=0.5]{figures/R(T).JPG}
-  \caption{Temperature dependence of the thermometers}
-  \label{r(t)}
-\end{figure} 
  
 However, going from \SI{4}{\kelvin} to \SI{300}{\milli\kelvin} is a big leap and there are problems that we have to overcome.
 The most significant one is sealing in \ce{^{3}He} liquid environment.
@@ -223,27 +206,24 @@ Microwave is sent through a self-made antenna which is connected to the coaxial 
 
 \begin{figure}
   \centering
-  \includegraphics[scale=0.5]{figures/vacuumcan.JPG}
+  \includegraphics[scale=0.25]{figures/vacuumcan.JPG}
   \caption{1266 Epoxy vacuum can}
   \label{vacuum-can}
 \end{figure}
  
  
 
-\begin{figure}
-  \centering
-  \includegraphics[scale=0.5]{figures/SCHEMA.JPG}
-  \caption{Thermal detection setup schema}
-  \label{thermal-schema}
+\begin{figure}[!htb]\centering
+   \begin{minipage}{0.49\textwidth}
+     \includegraphics[width=\linewidth]{figures/SCHEMA.JPG}
+     \caption{Thermal detection setup schema}\label{thermal-schema}
+   \end{minipage}
+   \begin {minipage}{0.49\textwidth}
+     \includegraphics[width=\linewidth]{figures/probe.JPG}
+     \caption{\ce{^{3}He} top loaded Refrigerator coaxial probe}\label{probe}
+   \end{minipage}
 \end{figure}
  
- 
-\begin{figure}
-  \centering
-  \includegraphics[scale=0.5]{figures/probe.JPG}
-  \caption{\ce{^{3}He} top loaded Refrigerator coaxial probe}
-  \label{probe}
-\end{figure}
 
 \section{Cyclotron resonance pretest}\label{Cyclotron}
 
@@ -261,11 +241,11 @@ The differential signal was fed into the first lock-in amplifier the output of w
 The amplitude of the input microwave is modulated internally by the microwave generator according to the frequency of the second lock-in amp which should be much smaller than the rapid oscillating factor of the first lock-in amp. 
 Therefore, after integrating twice, the final output should be a clean response of 2DEG CR signal.     
  
-\figureref{r(b)} is the response of the thermometer resistance without microwave illumination when magnetic field is swept. There is some irregular response but the result is repeatable.
+\figureref{r(b)} is the response of the thermometer resistance without microwave illumination when magnetic field is swept. There is some irregular response but the result is repeatable. Since the thermometers on the two arms have the same response, by using differential geometry, this influence can be cancelled.
 This background indicates that the direction of the magnetic field has asymmetric influence on the two branches. 
 \begin{figure}
   \centering
-  \includegraphics[scale=0.5]{figures/R(B)UP.JPG}
+  \includegraphics[scale=0.25]{figures/R(B)UP.JPG}
   \caption{Background sweeping}
   \label{r(b)}
 \end{figure}
@@ -273,23 +253,19 @@ This background indicates that the direction of the magnetic field has asymmetri
 When microwave is applied, obvious resonance peaks appear on each side (see \figureref{0dbm_40ghz}) and the larger the microwave power gets, the higher the resonance peaks shoot. In \figureref{thermopowerdep}, one can see that the signal can still be resolved even with power as low as -20dbm (\SI{0.01}{\milli \watt}). 
 Compared to the setup without these two measuring techniques, sensitivity is at least thirty times higher in terms of input microwave power.  
 
-\begin{figure}
-  \centering
-  \includegraphics[scale=0.5]{figures/0dbm.JPG}
-  \caption{CR at 0 dbm \SI{40}{\giga \hertz}}
-  \label{0dbm_40ghz}
-\end{figure}
- 
- 
-\begin{figure}
-  \centering
-  \includegraphics[scale=0.5]{figures/thermopowerdep.JPG}
-  \caption{Power dependence}
-  \label{thermopowerdep}
-\end{figure}
- 
 
 
+\begin{figure}[!htb]\centering
+   \begin{minipage}{0.49\textwidth}
+     \includegraphics[width=\linewidth]{figures/0dbm.JPG}
+     \caption{CR at 0 dbm \SI{40}{\giga \hertz}}\label{0dbm_40ghz}
+   \end{minipage}
+   \begin {minipage}{0.49\textwidth}
+     \includegraphics[width=\linewidth]{figures/thermopowerdep.JPG}
+     \caption{Power dependence}\label{thermopowerdep}
+   \end{minipage}
+\end{figure}
+ 
 
 
 
@@ -300,7 +276,8 @@ Electron spin resonance (ESR) or Electron paramagnetic resonance (EPR) spectrosc
 \begin{align}
 E=m_{s} g \mu_{B} B_{0}
 \end{align}
-where g is the electron's Landé g-factor.For the free electron, $g=2.0023$, $\mu_{B}$ is the Bohr magneton.
+where g is the electron's Landé g-factor.
+For the free electron, $g=2.0023$, $\mu_{B}$ is the Bohr magneton.
 Therefore, resonance peak happens at 
 \begin{align}
 \Delta E=g \mu_{B} B_{0}
@@ -317,13 +294,7 @@ Therefore, the g-factor is
 g=\frac{\hbar \omega}{\mu_{B}B}=1.9934
 \end{align}
 while the theoretical value is the free electron $g=2.0023$.
-\begin{figure}
-  \centering
-  \includegraphics[scale=0.5]{figures/dpph_esr.JPG}
-  \caption{ESR of DPPH}
-  \label{dpph_esr}
-\end{figure}
- 
+
 By subtracting the background and fitting with a Lorentzian (\figureref{dpph_fitting}): 
 
 \begin{align}
@@ -331,15 +302,18 @@ L(B)=\frac{A}{[1+ (\frac{\mu g \tau}{h})(B-B_{r})]^{2}}
 \end{align}  
 we have a decoherence time $\tau = \SI{7.78}{\nano\second}$ which is a reasonable value in our case.
 
- 
- 
-\begin{figure}
-  \centering
-  \includegraphics[scale=0.5]{figures/dpph_fitting.JPG}
-  \caption{ESR Fitting of DPPH}
-  \label{dpph_fitting}
+\begin{figure}[!htb]\centering
+   \begin{minipage}{0.49\textwidth}
+     \includegraphics[width=\linewidth]{figures/dpph_esr.JPG}
+     \caption{ESR of DPPH}\label{dpph_esr}
+   \end{minipage}
+   \begin {minipage}{0.49\textwidth}
+     \includegraphics[width=\linewidth]{figures/dpph_fitting.JPG}
+     \caption{ESR fitting of DPPH}\label{dpph_fitting}
+   \end{minipage}
 \end{figure}
  
+
 Here, we demonstrated that the nano-calorimeter we constructed has the ability to resolve both CR and ESR signals for those material which has a non-radiative relaxation process. 
 
 
@@ -384,7 +358,7 @@ Again, this whole setup is immersed in \ce{^{3}He} liquid by our top-load \ce{^{
 
 \begin{figure}
   \centering
-  \includegraphics[scale=0.5]{figures/configuration.JPG}
+  \includegraphics[scale=0.25]{figures/configuration.JPG}
   \caption{Microwave absorption spectroscopy construction}
   \label{configuration}
 \end{figure}
@@ -395,38 +369,45 @@ The signal from the detector is a negative voltage which we then feed into our l
 We calibrated the system by monitoring the reading of the lock-in amp while sweeping input microwave frequency and power intensity.
 \figureref{spec} shows the relation between $V_{out}$ and $f_{in}$ with a constant power of $\SI{1}{\milli \watt}$. We can see that for small frequencies (below $\SI{12}{\giga \hertz}$), it is a linear dependence approximately and there are fluctuations after that.
 
-\begin{figure}
-  \centering
-  \includegraphics[scale=0.5]{figures/spec.JPG}
-  \caption{setup calibration 1}
-  \label{spec}
-\end{figure}
+
 
 \figureref{multifre} shows how the voltage acts when input power is increased at a sampling rate of $\SI{1}{\giga \hertz}$. It's reasonable that larger microwave intensity will result in higher voltage reading. And the lower the frequency is, the shaper the slope gets. 
 
-\begin{figure}
-  \centering
-  \includegraphics[scale=0.5]{figures/multifre.JPG}
-  \caption{setup calibration 2}
-  \label{multifre}
+\begin{figure}[!htb]\centering
+   \begin{minipage}{0.49\textwidth}
+     \includegraphics[width=\linewidth]{figures/spec.JPG}
+     \label{spec}
+   \end{minipage}
+   \begin {minipage}{0.49\textwidth}
+     \includegraphics[width=\linewidth]{figures/multifre.JPG}
+     \label{multifre}
+   \end{minipage}
+   \caption{setup calibration}
 \end{figure}
 
 
+ 
 This means our setup works better at lower frequencies. 
 Actually, if we do a polynomial fitting (\figureref{cali_fitting}) at $\SI{2}{\giga \hertz}$, the result is very satisfying. 
+ 
+
+\begin{figure}[!htb]\centering
+   \begin{minipage}{0.49\textwidth}
+     \includegraphics[width=\linewidth]{figures/cali_fitting.JPG}
+     \caption{Polynomial fitting}\label{cali_fitting}
+   \end{minipage}
+   \begin {minipage}{0.49\textwidth}
+     \includegraphics[width=\linewidth]{figures/CRpowerdep.JPG}
+     \caption{CR pretest}\label{crpowerdep}
+   \end{minipage}
+\end{figure}
+
+
 Therefore, it is quite convincing that the negative voltage measured by the detector has a polynomial dependence with the input power intensity.
  
  
-\begin{figure}
-  \centering
-  \includegraphics[scale=0.5]{figures/cali_fitting.JPG}
-  \caption{Polynomial fitting}
-  \label{cali_fitting}
-\end{figure} 
- 
- 
- 
- 
+
+
  
  
 \section{Cyclotron resonance pretest}\label{Cyclotron}
@@ -434,13 +415,7 @@ Therefore, it is quite convincing that the negative voltage measured by the dete
 CR is a good test for this setup at larger frequencies so that electrons can go at least one circle before any collision and the peaks are separated far enough to resolve. 
 \figureref{crpowerdep} shows symmetric CR peaks appear when magnetic field is swept and the signal is higher with larger input power.  
 
-\begin{figure}
-  \centering
-  \includegraphics[scale=0.5]{figures/CRpowerdep.JPG}
-  \caption{cyclotron pretest}
-  \label{crpowerdep}
-\end{figure}
- 
+
 
 
 
@@ -450,7 +425,8 @@ CR is a good test for this setup at larger frequencies so that electrons can go 
 
 \section{Improvement underway}\label{Improvement}
 
-Though CR can be resolved clearly, we are unable to see authentic repeatable edge state absorption peaksand there are sudden bursts of noise due to reflection and thermal fluctuation.
+Though CR can be resolved clearly, we are unable to see authentic repeatable edge state absorption peaks
+and there are sudden bursts of noise due to reflection and thermal fluctuation.
 Possible reasons are noise level being too high, N-grease being too thick for electric field to probe edge state or even current equipment precision being not high enough to resolve the edge state absorption. 
 We've come up with new ideas to improve the situation and new design is ready to be manufactured. 
 
