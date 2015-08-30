@@ -1,3 +1,7 @@
+%:
+%:
+%:
+%:
 \documentclass[12pt]{ruthesis}
 %\documentclass[12pt]{amsart}
 \usepackage{amsmath}
@@ -41,7 +45,18 @@
    %\makecover
    \maketitle
 
-\begin{abstract}
+
+
+%\include{ack}
+\tableofcontents
+\listoffigures
+%\listoftables
+%   \include{ded}
+\end{frontmatter}
+\pagenumbering{arabic}
+\linespacing{1.7}
+
+\chapter{Introduction}
 
 Electron spin resonance (ESR) and cyclotron resonance (CR) are two of the most significant feature of electrons under magnetic field.
 In order to detect the ESR of a single nano-object, a highly sensitive tool is required.
@@ -57,19 +72,6 @@ We have sample patterned with multiple circular dots on the order of several mic
 It is directly placed onto the meander line superconducting waveguide positioned inside a resonance container.
 The whole setup is attached to the bottom of a top loaded \ce{^{3}He} cryostat with base temperature down to \SI{300}{\milli\kelvin}.
 This absence of a contact gives this setup an advantage over standard transport measurements and could be generalized to a standard method for probing edge states hosted in other new materials.
-
-
-\end{abstract}
-
-%\include{ack}
-\tableofcontents
-\listoffigures
-%\listoftables
-%   \include{ded}
-\end{frontmatter}
-\pagenumbering{arabic}
-\linespacing{1.7}
-
 
 
 \chapter{Transport behavior of electrons under the illumination of microwave}\label{Transport}
@@ -114,9 +116,7 @@ MIRO is fascinating nonequilibrium transport phenomenon found in both n-type and
  
 Theoretical explanations of MIRO involve both a displacement mechanism and an inelastic mechanism \cite{PhysRevB.89.125401}.
 Both these mechanisms modify the scattering of electrons due to microwave assistance. This theory predicts that the photoresistance oscillates as
-\begin{align}
-\delta R_{\omega}/R_{0} =-2\pi\eta P\lambda^{2}\epsilon \sin(2\pi\epsilon)
-\end{align} 
+$\delta R_{\omega}/R_{0} =-2\pi\eta P\lambda^{2}\epsilon \sin(2\pi\epsilon)$
 where $\eta$ is the dimensionless scattering rate, $P$ is the dimensionless microwave power, $\lambda$ is the Dingle factor which is related to the quantum lifetime as well as cyclotron frequency and $\epsilon :=\omega/\omega_{c}$. 
 
 
@@ -154,7 +154,7 @@ However, on a patterned sample (with a feature size on the order of \si{\micro\m
 \begin{align}
 \omega_{\pm}=\frac{\omega_{c}}{2} \pm \sqrt{ \omega_{0}^{2}+ \left(\frac{ \omega_{c} }{2}\right)^{2}},
 \end{align}
-where $\displaystyle \omega_{0}^{2}=\frac{N_{s}e^{2}}{2m^{\ast}\epsilon_{\mathrm{eff}}r}$, effective mass $m^{*}=0.067m_{e}$, $\epsilon_{\mathrm{eff}}=6.5$ and $r$ is the radius of the dots. 
+where $\displaystyle \omega_{0}^{2}=\frac{N_{s}e^{2}}{2m^{\ast}\epsilon_{\mathrm{eff}}r}$, effective mass $m^{*}=0.067m_{e}$, $\epsilon_{\mathrm{eff}}=6.5$ and $r$ is the radius of the dots. \cite{PhysRevB.28.4875}
 %In our sample, the electron density $N_{s}=\SI{2.5e11}{\centi\meter^{-2}}$, 
 \begin{figure}[!htb]\centering
    \begin{minipage}{0.49\textwidth}
@@ -170,7 +170,7 @@ where $\displaystyle \omega_{0}^{2}=\frac{N_{s}e^{2}}{2m^{\ast}\epsilon_{\mathrm
 
 
 
-\cite{PhysRevB.28.4875}
+
 
 Boundary plasmon has been eliminated by choosing irregularly shaped samples and frequency is limited by the size of our waveguide though it could be extended using frequency multiplier and replacing with coaxial cable. 
 
@@ -180,13 +180,17 @@ Boundary plasmon has been eliminated by choosing irregularly shaped samples and 
 In order to improve the sensitivity, we constructed another setup which works in \SI{300}{\milli\kelvin} due to the fact that the lower the temperature gets, the shaper resistance line the Cernox thermometer's resistance will act (\figureref{r(t)}).
 
 \begin{figure}[!htb]\centering
-   \begin{minipage}{0.49\textwidth}
+   \begin{minipage}{0.3\textwidth}
      \includegraphics[width=\linewidth]{figures/thermometercx.JPG}
      \caption{Cernox Thermometer}\label{thermometer}
    \end{minipage}
-   \begin {minipage}{0.49\textwidth}
+   \begin {minipage}{0.3\textwidth}
      \includegraphics[width=\linewidth]{figures/R(T).JPG}
      \caption{Temperature dependence of the thermometer}\label{r(t)}
+   \end{minipage}
+   \begin {minipage}{0.3\textwidth}
+   	\includegraphics[width=\linewidth]{figures/vacuumcan.JPG}
+  	\caption{1266 Epoxy vacuum can}
    \end{minipage}
 \end{figure}
  
@@ -203,15 +207,7 @@ We dissolve soap in glycerin and then scribble it on the surfaces to fill up any
 Validation of the sealing can only be tested by whether the CR signal is resolved.
 
 The whole vacuum can is immersed in liquid \ce{^{3}He} in a top-loaded refrigerator.
-Microwaves are sent through a self-made antenna which is connected to the coaxial cable in the probe (see \figureref{probe} and \figureref{thermal-schema}).
-
-\begin{figure}
-  \centering
-  \includegraphics[scale=0.25]{figures/vacuumcan.JPG}
-  \caption{1266 Epoxy vacuum can}
-  \label{vacuum-can}
-\end{figure}
- 
+Microwaves are sent through a self-made antenna which is connected to the coaxial cable in the probe (see \figureref{probe} and \figureref{thermal-schema}).\cite{KrisThesis} 
  
 
 \begin{figure}[!htb]\centering
@@ -225,7 +221,8 @@ Microwaves are sent through a self-made antenna which is connected to the coaxia
    \end{minipage}
 \end{figure}
 
-[from Dr. Kristjan Stone, Ph. D thesis, Millimeter Wave Transmission Spectroscopy of 2D Electron and Hole Systems] 
+
+
 
 \section{Cyclotron resonance pretest}\label{Cyclotron}
 
@@ -240,15 +237,7 @@ This indicates that the output signal $V_{\mathrm{out}}$ is linearly proportiona
 The differential signal was fed into the first lock-in amplifier the output of which then was fed into the second lock-in amp. 
 The amplitude of the input microwave is modulated internally by the microwave generator according to the frequency of the second lock-in amp which should be much smaller than the rapid oscillating factor of the first lock-in amp. 
 Therefore, after integrating twice, the final output should be a clean response of 2DEG CR signal.     
- 
-\figureref{r(b)} is the response of the thermometer resistance without microwave illumination when magnetic field is swept. There is some irregular response but the result is repeatable. Since the thermometers on the two arms have the same response, by using differential geometry, this influence can be cancelled.
-This background indicates that the direction of the magnetic field has asymmetric influence on the two branches. 
-\begin{figure}
-  \centering
-  \includegraphics[scale=0.25]{figures/R(B)UP.JPG}
-  \caption{Background sweeping}
-  \label{r(b)}
-\end{figure}
+
 
 When microwave is applied, obvious resonance peaks appear on each side (see \figureref{0dbm_40ghz}) and the larger the microwave power gets, the higher the resonance peaks shoot. In \figureref{thermopowerdep}, one can see that the signal can still be resolved even with power as low as -20dbm (\SI{0.01}{\milli \watt}). 
 Compared to the setup without these two measuring techniques, sensitivity is at least thirty times higher in terms of input microwave power.  
@@ -428,17 +417,37 @@ CR is a good test for this setup at larger frequencies so that electrons can go 
 Though CR can be resolved clearly, we are unable to see authentic repeatable edge state absorption peaks
 and there are sudden bursts of noise due to reflection and thermal fluctuation.
 Possible reasons are N-grease being too thick for electric field to probe edge state or even current equipment precision being not high enough to resolve the edge state absorption. 
-We've come up with new ideas to improve the situation and new design is ready to be manufactured. 
+However, the most possible problem is the coupling between the microwave and the edge state is not good enough because of the polarization of the field. 
+
+
+Therefore, we've come up with a new design to improve the situation. 
+Instead of having the microwave go through a couple of stages attenuated by min-SMP connectors and silver paste, we are attaching the sample directly to the coaxial cable and sealing the circumference by soldering indium outside. 
+The returning microwave will use the same cable and measured by the same detector.
+The way to achieve this is using a directional coupler which has three ports, four ports if it is dual. 
+Directional couplers are passive radio technology devices which couple a define ratio of electromagnetic power in the transmission line to a specific port where the signal is fed to another circuit. 
+By this directional coupling, the returning signal comes out of the coupler without interacting with the original input.
+
+The key point of this idea is making sure that the surface of the sample is perfectly perpendicular to the magnetic field in order to avoid any offset in the field calibration for the quantum hall regime thus miss the resonant peak.  
+We manufactured a stage and lay the sample flat on the bottom plane. 
+Then attach this stage to the probe in a straight line so that the surface of the wafer is in a right angle with the probe which is parallel to the magnetic field in our setup. 
+
+We are still considering CR as a pretest measurement since the signal is relatively large and easy to resolve. 
+We regard this setup has higher potential to reveal the resonant peaks for edge states in the quantum hall droplets.    
 
 
 
 
 
 \chapter{Summary}\label{summary}
+2D topologically insulating phase in InAs/GaSb is experimentally discovered in our group by Dr.Knez \cite{IvanThesis} which is an extremely interesting research topic in which the edge of the material is helical because of spin-momentum locking. 
+This phenomenon is protected by time reversal symmetry and consequently the edge conductance is quantized to $2e^{2}/h$ even with the presence of nonmagnetic weak disorder. 
+Our goal is eventually being able to detect spin resonance of the edge state electrons in this material where the electron spin absorbs the incident microwave photon energy, flips electron momentum, thus causing a resonant peak in resistivity. 
 
-The main theme is using microwave to detect various resonance phenomenon including CR, ESR, GR, and edge state.
-We developed tools for different purposes such as transport, thermal and absorption measurement setups.
-We successfully resolved CR on 2DEG, GR on 2DEG, ESR on DDPH and are working on detecting edge state resonance. 
+
+In order to achieve that, we are working on a relatively easier case which is detecting edge states in conventional AlGaAs/GaAs material within the regime of integer quantum hall effect as a pre-step.
+We fabricated quantum droplets on the wafer by photolithography to form a known shape which is a circle in our case. This edge is pure one dimensional and dissipationless when lies in the quantum hall region which means there is no backscattering. Theoretically, the number and velocity of the modes could be measured directly and different equilibrium regimes can be accessed in the same sample.
+So far, we've detected various resonance peaks including CR, ESR and GR using microwave with different tools we constructed for different purposes to conduct transport, thermal and absorption measurement.  
+We believe as long as the microwave is effectively coupled to the quantum hall edge, resolving this resonance peak should be achievable.  
 
 
 
