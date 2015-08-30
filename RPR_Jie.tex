@@ -28,7 +28,7 @@
 \degree{Master of Science}
 
 \committee {
-		Rui-Rui Du, Chair\\
+	Rui-Rui Du, Chair\\
         Professor of Physics and Astronomy \and
         Junichiro Kono \\
         Professor of Electrical and Computer Engineering and Physics \& Astronomy \and
@@ -131,7 +131,7 @@ where $\eta$ is the dimensionless scattering rate, $P$ is the dimensionless micr
 
 The density of states of a 2DEG forms Landau levels when a magnetic field is applied.
 However, sweeping either microwave frequency or magnetic field will result in the case where energy of the incident photons is equal to the energy gap of the Landau levels, therefore causing resonance.
-However, in \ce{AlGaAs/GaAs} material, electron relaxation can be non-radiative by passing the extra energy to phonons and raising lattice temperature.
+However, in \ce{AlGaAs}/\ce{GaAs} material, electron relaxation can be non-radiative by passing the extra energy to phonons and raising lattice temperature.
 This temperature change can be measured by a nano-calorimeter.
 We constructed such a device using a special Cernox thermometer which has a huge resistance difference for a tiny temperature change at low temperature.
 
@@ -154,8 +154,7 @@ However, on a patterned sample (with a feature size on the order of \si{\micro\m
 \begin{align}
 \omega_{\pm}=\frac{\omega_{c}}{2} \pm \sqrt{ \omega_{0}^{2}+ \left(\frac{ \omega_{c} }{2}\right)^{2}},
 \end{align}
-where $\displaystyle \omega_{0}^{2}=\frac{N_{s}e^{2}}{2m^{\ast}\epsilon_{\mathrm{eff}}r}$, effective mass $m^{*}=0.067m_{e}$, $\epsilon_{\mathrm{eff}}=6.5$ and $r$ is the radius of the dots. \cite{PhysRevB.28.4875}
-%In our sample, the electron density $N_{s}=\SI{2.5e11}{\centi\meter^{-2}}$, 
+where $\displaystyle \omega_{0}^{2}=\frac{N_{s}e^{2}}{2m^{\ast}\epsilon_{\mathrm{eff}}r}$, effective mass $m^{*}=0.067m_{e}$, $\epsilon_{\mathrm{eff}}=6.5$ and $r$ is the radius of the dots \cite{PhysRevB.28.4875}.
 \begin{figure}[!htb]\centering
    \begin{minipage}{0.49\textwidth}
      \includegraphics[width=\linewidth]{figures/bare_cr.JPG}
@@ -167,17 +166,12 @@ where $\displaystyle \omega_{0}^{2}=\frac{N_{s}e^{2}}{2m^{\ast}\epsilon_{\mathrm
    \end{minipage}
 \end{figure}
 
-
-
-
-
-
-Boundary plasmon has been eliminated by choosing irregularly shaped samples and frequency is limited by the size of our waveguide though it could be extended using frequency multiplier and replacing with coaxial cable. 
+The boundary plasmon has been eliminated by choosing irregularly shaped samples and the frequency is limited by the size of our waveguide.
 
  
 \section{Setup construction}\label{Construction}
 
-In order to improve the sensitivity, we constructed another setup which works in \SI{300}{\milli\kelvin} due to the fact that the lower the temperature gets, the shaper resistance line the Cernox thermometer's resistance will act (\figureref{r(t)}).
+In order to improve the sensitivity, we constructed another setup which works in \SI{300}{\milli\kelvin} due to the fact that the lower the temperature gets, the sharper resistance line the Cernox thermometer's resistance will act (\figureref{r(t)}).
 
 \begin{figure}[!htb]\centering
    \begin{minipage}{0.3\textwidth}
@@ -189,7 +183,7 @@ In order to improve the sensitivity, we constructed another setup which works in
      \caption{Temperature dependence of the thermometer}\label{r(t)}
    \end{minipage}
    \begin {minipage}{0.3\textwidth}
-   	\includegraphics[width=\linewidth]{figures/vacuumcan.JPG}
+   	\includegraphics[scale=0.15]{figures/vacuumcan.JPG}
   	\caption{1266 Epoxy vacuum can}
    \end{minipage}
 \end{figure}
@@ -203,11 +197,11 @@ In this case, we use thin sapphire crystal as the bridge between sample and ther
 Sealing in \ce{^{3}He} liquid environment is hard due to the fact that it's molecules are so small that they'll just enter every tiny gap.
 The way we used to seal is tapping the inner wall of the cap and outer wall of the base therefore compressing the flat surfaces of those two parts to seal.
 But this is still not enough since the surfaces are polished mechanically only.
-We dissolve soap in glycerin and then scribble it on the surfaces to fill up any possible tiny gap.
+We dissolve soap in glycerin and then scrubbed it on the surfaces to fill up any possible tiny gap.
 Validation of the sealing can only be tested by whether the CR signal is resolved.
 
 The whole vacuum can is immersed in liquid \ce{^{3}He} in a top-loaded refrigerator.
-Microwaves are sent through a self-made antenna which is connected to the coaxial cable in the probe (see \figureref{probe} and \figureref{thermal-schema}).\cite{KrisThesis} 
+Microwaves are sent through a self-made antenna which is connected to the coaxial cable in the probe (\figureref{probe}, \figureref{thermal-schema})\cite{KrisThesis}.
  
 
 \begin{figure}[!htb]\centering
@@ -217,7 +211,7 @@ Microwaves are sent through a self-made antenna which is connected to the coaxia
    \end{minipage}
    \begin {minipage}{0.49\textwidth}
      \includegraphics[width=\linewidth]{figures/probe.JPG}
-     \caption{\ce{^{3}He} top loaded Refrigerator coaxial probe}\label{probe}
+     \caption{\ce{^{3}He} top-loaded refrigerator coaxial probe}\label{probe}
    \end{minipage}
 \end{figure}
 
@@ -239,7 +233,8 @@ The amplitude of the input microwave is modulated internally by the microwave ge
 Therefore, after integrating twice, the final output should be a clean response of 2DEG CR signal.     
 
 
-When microwave is applied, obvious resonance peaks appear on each side (see \figureref{0dbm_40ghz}) and the larger the microwave power gets, the higher the resonance peaks shoot. In \figureref{thermopowerdep}, one can see that the signal can still be resolved even with power as low as -20dbm (\SI{0.01}{\milli \watt}). 
+When microwave is applied, obvious resonance peaks appear on each side (see \figureref{0dbm_40ghz}) and the larger the microwave power gets, the higher the resonance peaks shoot.
+In \figureref{thermopowerdep}, one can see that the signal can still be resolved even with power as low as -20dbm (\SI{0.01}{\milli \watt}). 
 Compared to the setup without these two measuring techniques, sensitivity is at least thirty times higher in terms of input microwave power.  
 
 
@@ -315,7 +310,7 @@ Here, we demonstrated that the nano-calorimeter we constructed has the ability t
 
 This project is aim at investigating the number and velocity of charge modes for edge states on a 2DEG.
 With its edge being pure one dimensional and dissipationless, it has tremendous potential applications \cite{PhysRevB.88.165305}.
-We patterned high mobility \ce{AlGaAs/GaAs} wafer ($n_{e} \approx \SI{1e11}{cm^{-2}}$, $\mu \approx \SI{15 e6}{\cm^{2}/\volt \second}$) with circular discs with a diameter of several microns by lithography. 
+We patterned high mobility \ce{AlGaAs}/\ce{GaAs} wafer ($n_{e} \approx \SI{1e11}{cm^{-2}}$, $\mu \approx \SI{15 e6}{\cm^{2}/\volt \second}$) with circular discs with a diameter of several microns by lithography. 
 For such a quantum droplet, the minimum energy of the excitations of the edge is $2\pi \hbar \nu /L$. 
 The circumference of the droplet is $L=2\pi R$ and the velocity of the charge mode $\nu \approx \SI{1e4}{m/s}$.
 
@@ -328,18 +323,16 @@ Meanwhile, the velocity of electrons going on cyclotron motion under magnetic fi
 \nu = 2 f_{c} l_{B}= \frac{2 \omega_{c}}{\pi} l_{B} 
 \end{align}
 where $\displaystyle \omega_{c}= \frac{eB}{m^{\ast}m_{0}}$ and $\displaystyle l_{B}=\sqrt{\frac{\hbar}{eB}} \approx \frac{257}{\sqrt{B}} \si{\angstrom}$.
-Therefore, for electrons in \ce{AlGaAs/GaAs}, the resonant frequency is related to the radius of the disc in the following way:
-
+Therefore, for electrons in \ce{AlGaAs}/\ce{GaAs}, the resonant frequency is related to the radius of the disc in the following way:
 \begin{align}
 R_{e}= \frac{\omega_{x}}{\omega_{M}} \frac{l_{B}}{\pi} \approx \frac{3.4}{\sqrt{B}} \, \si{\micro\meter/\giga\hertz}
 \end{align}
-
 By sweeping magnetic field or microwave frequency, we should be able to see a resonant peak with a line width related to the distribution of the disc radius. 
 
 
 \section{Setup construction and calibration}\label{Construction}
 
-We used a co-plane meanderline waveguide (see \cite{APLBroadbandESR}) to hold the patterned sample then placed the waveguide on the top of a broad band sample holder.
+We used a co-plane meanderline waveguide (\cite{APLBroadbandESR}) to hold the patterned sample then placed the waveguide on the top of a broad band sample holder.
 Electrical connection is done by silver paste.  
 The sample holder is connected to the coaxial cable in the transmission probe by a mini-SMP connector.
 Again, this whole setup is immersed in \ce{^{3}He} liquid in a top-loaded cryostat.
