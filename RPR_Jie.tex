@@ -308,6 +308,7 @@ Here, we demonstrated that the nano-calorimeter we constructed has the ability t
 
 \chapter{Microwave absorption spectroscopy of electrons in 2DEG}\label{Absorption}
 
+\section{Theoretical calculation on resonant frequency}
 This project is aim at investigating the number and velocity of charge modes for edge states on a 2DEG.
 With its edge being pure one dimensional and dissipationless, it has tremendous potential applications \cite{PhysRevB.88.165305}.
 We patterned high mobility \ce{AlGaAs}/\ce{GaAs} wafer ($n_{e} \approx \SI{1e11}{cm^{-2}}$, $\mu \approx \SI{15 e6}{\cm^{2}/\volt \second}$) with circular discs with a diameter of several microns by lithography. 
@@ -410,22 +411,28 @@ CR is a good test for this setup at larger frequencies so that electrons can go 
 Though CR can be resolved clearly, we are unable to see authentic repeatable edge state absorption peaks
 and there are sudden bursts of noise due to reflection and thermal fluctuation.
 Possible reasons are N-grease being too thick for electric field to probe edge state or even current equipment precision being not high enough to resolve the edge state absorption. 
-However, the most possible problem is the coupling between the microwave and the edge state is not good enough because of the polarization of the field. 
+However, the most likely problem is the coupling between the microwave and the edge state being not effective enough due to the field polarization. 
 
 
-Therefore, we've come up with a new design to improve the situation. 
-Instead of having the microwave go through a couple of stages attenuated by min-SMP connectors and silver paste, we are attaching the sample directly to the coaxial cable and sealing the circumference by soldering indium outside. 
-The returning microwave will use the same cable and measured by the same detector.
-The way to achieve this is using a directional coupler which has three ports, four ports if it is dual. 
+We came up with a new design to improve the situation using a different configuration. 
+Instead of having the microwave go through a couple of stages attenuated by min-SMP connectors and silver paste, we attach the sample directly to the coaxial cable.
+We seal the circumference of the sample by soldering indium to the shell of the cable while connect the inner area of the Corbino-like ring to the internal core so that the electromagnetic field is confined in the cable until it reaches the wafer surface which reflects a certain proportion of the energy flow.  
+The returning microwave is transmitted back through the same cable and measured by the microwave power detector.
+The way to achieve this is using a directional coupler which has three ports(four ports if it is dual). 
 Directional couplers are passive radio technology devices which couple a define ratio of electromagnetic power in the transmission line to a specific port where the signal is fed to another circuit. 
 By this directional coupling, the returning signal comes out of the coupler without interacting with the original input.
 
-The key point of this idea is making sure that the surface of the sample is perfectly perpendicular to the magnetic field in order to avoid any offset in the field calibration for the quantum hall regime thus miss the resonant peak.  
+Quantum hall droplets are fabricated within the region between the inner and outer circle of the Corbino-like ring. 
+2DEG exists inside these droplets, the radius of which must be larger than cyclotron radius but small enough to have an excitation energy within our spectrum(Detail calculation is presented in section 4.1).
+Polarization of the electromagnetic fields is in the plane perpendicular to the external magnetic field and parallel with the sample surface. 
+Thus, interaction between the electric field and the edge state should be efficient.
+When the incident microwave photons have energy the same with the first excitation energy of the edge state on the quantum hall droplets, the edge tends to absorb the power causing a decrease in the returning microwave intensity.
+The key point of this idea is to make sure that the surface of the sample is perfectly perpendicular to the magnetic field in order to avoid any offset in the field calibration for the quantum hall regime thus miss the resonant peak.  
 We manufactured a stage and lay the sample flat on the bottom plane. 
-Then attach this stage to the probe in a straight line so that the surface of the wafer is in a right angle with the probe which is parallel to the magnetic field in our setup. 
+Then we attach this stage to the probe in a straight line so that the surface of the wafer is in a right angle with the probe which is parallel to the magnetic field in our setup. 
 
 We are still considering CR as a pretest measurement since the signal is relatively large and easy to resolve. 
-We regard this setup has higher potential to reveal the resonant peaks for edge states in the quantum hall droplets.    
+We regard this setup have higher potential to reveal the resonant peaks for edge state resonance in the quantum hall droplets.    
 
 
 
